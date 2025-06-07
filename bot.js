@@ -19,3 +19,8 @@ bot.on('spawn', () => {
 // Route giữ web sống
 app.get('/', (req, res) => res.send('Bot is alive!'));
 app.listen(port, () => console.log(`🌐 Web service running on port ${port}`));
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('Bot is running!'));
+app.listen(3000, () => console.log('✅ Web server started'));
